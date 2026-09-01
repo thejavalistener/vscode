@@ -1,0 +1,52 @@
+{
+    "extensions.ignoreRecommendations": true,
+    "workbench.startupEditor": "none",
+    "workbench.editor.empty.hint": "hidden",
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+	"update.mode": "none",
+	"extensions.autoUpdate": false,
+    "extensions.autoCheckUpdates": false,
+    "editor.fontSize": 14, 
+    "editor.mouseWheelZoom": false,
+    "window.zoomPerWindow": false,
+    "breadcrumbs.enabled": false,
+	"editor.hover.delay": 1000,
+	"editor.hover.enabled": false,
+    "editor.quickSuggestionsDelay": 1500,
+    "editor.stickyScroll.enabled": false,
+	"workbench.tree.enableStickyScroll": false,
+    "editor.minimap.enabled": false,
+    "security.workspace.trust.enabled":false,
+"editor.quickSuggestions": {
+"other": false,
+"comments": false,
+"strings": false
+},
+"editor.suggestOnTriggerCharacters": false,
+"editor.parameterHints.enabled": false,
+"editor.wordBasedSuggestions": "off",
+"redhat.telemetry.enabled": true,
+"workbench.colorTheme": "Visual Studio Dark",
+"workbench.editor.editorActionsLocation": "titleBar",
+"editor.renderWhitespace": "none",
+"editor.guides.indentation": false,
+"editor.tabSize": 4,
+"editor.insertSpaces": true,
+"editor.detectIndentation": false,
+"editor.lightbulb.enabled": "off",
+"editor.inlayHints.enabled": "off",
+"java.signatureHelp.enabled": false,
+"workbench.editorAssociations": {
+  "*.dat": "hexEditor.hexedit"
+},
+"editor.bracketPairColorization.enabled": false,
+"editor.renderControlCharacters": false,
+"git.enableSmartCommit": true,
+"java.format.settings.url": "${workspaceFolder}/../eclipse-formatter.xml",
+  "java.project.sourcePaths": [
+    "${workspaceFolder}/src/main/java",
+    "${workspaceFolder}/src"
+  ]
+
+}

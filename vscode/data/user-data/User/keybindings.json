@@ -1,0 +1,301 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "ctrl+=", // bloquea zoom in global
+    "command": "-workbench.action.zoomIn"
+  },
+  {
+    "key": "ctrl+-", // bloquea zoom out global
+    "command": "-workbench.action.zoomOut"
+  },
+  {
+    "key": "ctrl+0", // bloquea reset de zoom
+    "command": "-workbench.action.zoomReset"
+  },
+ 
+ 
+    {
+        "key": "ctrl+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+	
+    {
+        "key": "f11",
+        "command": "-workbench.action.toggleFullScreen",
+        "when": "!isIOS"
+    },
+    {
+        "key": "f11",
+        "command": "workbench.action.debug.start",
+        "when": "debuggersAvailable && debugState == 'inactive' && (editorLangId == 'c'|| editorLangId == 'cpp')"
+    },
+	{
+	  "key": "f11",
+	  "command": "java.debug.debugJavaFile",
+	  "when": "editorTextFocus && editorLangId == 'java'"
+	},
+    {
+        "key": "f5",
+        "command": "-workbench.action.debug.start",
+        "when": "debuggersAvailable && debugState == 'inactive'"
+    },
+    {
+        "key": "f6",
+        "command": "workbench.action.debug.stepOver",
+        "when": "debugState == 'stopped'"
+    },
+    {
+        "key": "f10",
+        "command": "-workbench.action.debug.stepOver",
+        "when": "debugState == 'stopped'"
+    },
+    {
+        "key": "f5",
+        "command": "workbench.action.debug.stepInto",
+        "when": "debugState != 'inactive'"
+    },
+    {
+        "key": "f11",
+        "command": "-workbench.action.debug.stepInto",
+        "when": "debugState != 'inactive'"
+    },
+    {
+        "key": "f9",
+        "command": "editor.debug.action.runToCursor"
+    },
+	{
+		"key": "f8",
+		"command": "workbench.action.debug.continue",
+		"when": "debugState == 'stopped'"
+	},    
+	{
+        "key": "ctrl+f2",
+        "command": "workbench.action.debug.stop",
+        "when": "inDebugMode && !focusedSessionIsAttach"
+    },
+    {
+        "key": "shift+f5",
+        "command": "-workbench.action.debug.stop",
+        "when": "inDebugMode && !focusedSessionIsAttach"
+    },
+    {
+        "key": "ctrl+shift+e",
+        "command": "workbench.files.action.collapseExplorerFolders"
+    },
+    {
+        "key": "ctrl+7",
+        "command": "editor.action.addCommentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+k ctrl+c",
+        "command": "-editor.action.addCommentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+7",
+        "command": "editor.action.removeCommentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+k ctrl+u",
+        "command": "-editor.action.removeCommentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+f",
+        "command": "editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+    },
+    {
+        "key": "shift+alt+f",
+        "command": "-notebook.formatCell",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && inCompositeEditor && notebookEditable && !editorReadonly && activeEditor == 'workbench.editor.notebook'"
+    },	
+    {
+        "key": "shift+alt+f",
+        "command": "-editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+    },
+	{
+		"key": "shift+alt+f",
+		"command": "workbench.action.addRootFolder"
+	},
+    {
+        "key": "alt+1",
+        "command": "revealFileInOS"
+    },
+    {
+        "key": "shift+alt+r",
+        "command": "-revealFileInOS",
+        "when": "!editorFocus"
+    },
+  {
+    "key": "ctrl+=", // también podés usar "ctrl+plus"
+    "command": "editor.action.fontZoomIn" 
+  },
+  {
+    "key": "ctrl+-",
+    "command": "editor.action.fontZoomOut"
+},
+{
+    "key": "ctrl+shift+oem_plus",
+    "command": "-workbench.action.zoomIn"
+},
+{
+    "key": "ctrl+numpad_add",
+    "command": "-workbench.action.zoomIn"
+},
+{
+    "key": "ctrl+shift+oem_minus",
+    "command": "-workbench.action.zoomOut"
+},
+{
+    "key": "ctrl+numpad_subtract",
+    "command": "-workbench.action.zoomOut"
+},
+{
+    "key": "ctrl+numpad_add",
+    "command": "editor.action.fontZoomIn"
+},
+{
+    "key": "ctrl+numpad_subtract",
+    "command": "editor.action.fontZoomOut"
+},
+{
+    "key": "ctrl+numpad0",
+    "command": "-workbench.action.zoomReset"
+},
+{
+    "key": "ctrl+numpad0",
+    "command": "editor.action.fontZoomReset"
+},
+{
+    "key": "shift+alt+r",
+    "command": "editor.action.rename",
+    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+},
+{
+    "key": "f2",
+    "command": "-editor.action.rename",
+    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+},
+{
+    "key": "ctrl+d",
+    "command": "editor.action.deleteLines",
+    "when": "textInputFocus && !editorReadonly"
+},
+{
+    "key": "ctrl+shift+k",
+    "command": "-editor.action.deleteLines",
+    "when": "textInputFocus && !editorReadonly"
+},
+{
+    "key": "alt+x",
+    "command": "workbench.action.terminal.focus",
+    "when": "accessibilityModeEnabled && accessibleViewOnLastLine && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibilityModeEnabled && accessibleViewOnLastLine && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'"
+},
+{
+    "key": "ctrl+down",
+    "command": "-workbench.action.terminal.focus",
+    "when": "accessibilityModeEnabled && accessibleViewOnLastLine && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibilityModeEnabled && accessibleViewOnLastLine && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'"
+},
+{
+  "key": "alt+x",
+  "command": "workbench.action.terminal.toggleTerminal"
+},
+{
+  "key": "ctrl+shift+y",
+  "command": "editor.action.copyLinesDownAction",
+  "when": "editorTextFocus"
+},
+{
+    "key": "alt+2",
+    "command": "workbench.action.terminal.openNativeConsole",
+    "when": "!terminalFocus"
+},
+{
+    "key": "alt+3",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+        "text": "start powershell\u000d"
+    }
+}
+,
+{
+  "key": "ctrl+alt+x",
+  "command": "workbench.action.terminal.newWithCwd",
+  "args": {
+    "cwd": "${fileDirname}"
+  },
+  "when": "editorTextFocus"
+},
+{
+  "key": "ctrl+left",
+  "command": "cursorWordPartLeft",
+  "when": "textInputFocus"
+},
+{
+  "key": "ctrl+right",
+  "command": "cursorWordPartRight",
+  "when": "textInputFocus"
+},
+{
+  "key": "ctrl+shift+left",
+  "command": "cursorWordPartLeftSelect",
+  "when": "textInputFocus"
+},
+{
+  "key": "ctrl+shift+right",
+  "command": "cursorWordPartRightSelect",
+  "when": "textInputFocus"
+},
+{
+    "key": "alt+shift+m",        // alternar con un solo atajo
+    "command": "workbench.action.toggleActivityBarVisibility"
+  },
+ {
+	"key": "ctrl+m",
+	"command": "-editor.action.toggleTabFocusMode"
+},
+{
+	"key": "ctrl+m",
+	"command": "workbench.action.toggleSidebarVisibility"
+},
+{
+  "key": "ctrl+shift+m",
+  "command": "workbench.action.togglePanel"
+},
+{
+  "key": "ctrl+f11",
+  "command": "workbench.action.tasks.runTask",
+  "args": "build-and-run",
+  "when": "editorTextFocus && (editorLangId == 'c' || editorLangId == 'cpp')"
+},
+{
+  "key": "ctrl+f11",
+  "command": "java.debug.runJavaFile",
+  "when": "editorTextFocus && editorLangId == 'java'"
+},
+{
+  "key": "ctrl+f12",
+  "command": "workbench.action.tasks.runTask",
+  "args": "build-and-run",
+  "when": "editorTextFocus && (editorLangId == 'c' || editorLangId == 'cpp')"
+},
+{
+  "key": "ctrl+f12",
+  "command": "java.debug.runJavaFile",
+  "when": "editorTextFocus && editorLangId == 'java'"
+},
+{
+  "key": "ctrl+shift+b",
+  "command": "workbench.action.tasks.runTask",
+  "args": "build"
+},
+{
+    "key": "ctrl+shift+o",
+    "command": "editor.action.organizeImports",
+    "when": "editorTextFocus && editorLangId == 'java'"
+}
+]
