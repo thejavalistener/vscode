@@ -223,10 +223,18 @@
 }
 ,
 {
-  "key": "ctrl+alt+x",
+  "key": "ctrl+alt+shift+x",
   "command": "workbench.action.terminal.newWithCwd",
   "args": {
     "cwd": "${fileDirname}"
+  },
+  "when": "editorTextFocus"
+},
+{
+  "key": "ctrl+alt+x",
+  "command": "workbench.action.terminal.newWithCwd",
+  "args": {
+    "cwd": "${workspaceFolder}"
   },
   "when": "editorTextFocus"
 },
