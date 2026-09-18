@@ -1,0 +1,11 @@
+{
+  "Abrir y cerrar archivo FILE": {
+    "prefix": "fopen",
+    "body": [
+      "FILE* $1 = fopen(\"$2\", \"$3\");",
+      "",
+      "fclose($1);"
+    ],
+    "description": "Snippet para abrir y cerrar un archivo con FILE y fclose"
+  }
+}
