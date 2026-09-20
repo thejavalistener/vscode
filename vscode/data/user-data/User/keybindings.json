@@ -307,5 +307,13 @@
 {
     "key": "ctrl+shift+j",
     "command": "workbench.action.reloadWindow"
+},
+{
+  "key": "ctrl+shift+x",
+  "command": "workbench.action.terminal.newWithCwd",
+  "args": {
+    "cwd": "${workspaceFolder}/../.."
+  }
 }
+	
 ]
