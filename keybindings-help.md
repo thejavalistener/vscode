@@ -23,6 +23,7 @@
 | `Alt` + `X`                     | Hacer foco a la terminal integrada                              |
 | `Ctrl` + `Alt` + `X`            | Abrir una nueva terminal posicionada en la carpeta del proyecto |
 | `Ctrl` + `Alt` + `shift` +`X`   | Abrir una nueva terminal posicionada en la carpeta del archivo  |
+| `Ctrl` + `shift` +`X`           | Abrir una nueva terminal posicionada en la carpeta vscode       |
 | `Ctrl` + `R`                    | Cambiar de Workspace                                            |
 
 
