@@ -1,8 +1,16 @@
 @echo off
 setlocal enabledelayedexpansion
 
+:: Extraer la unidad de la ruta completa del propio script (%~dp0 -> primeros 2 caracteres)
+set "SCRIPT_DRIVE=%~dp0"
+set "SCRIPT_DRIVE=%SCRIPT_DRIVE:~0,2%"
+
+:: Si se pasó un parámetro, usarlo. Si no, usar la unidad del script.
 set "BASE=%~1"
-if "%BASE%"=="" set "BASE="
+if "%BASE%"=="" set "BASE=%SCRIPT_DRIVE%"
+
+:: Quitar barras diagonales sobrantes por si el usuario pasó "D:\"
+set "BASE=%BASE:\=%"
 
 set "JAVA_HOME=%BASE%\vscode\jdk25"
 set "PATH=%JAVA_HOME%\bin;%BASE%\vscode\MinGW\bin;%PATH%"
