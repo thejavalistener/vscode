@@ -38,6 +38,7 @@
 | `Ctrl` + `7`            | Comentar código seleccionado                             |
 | `Ctrl` + `Shift` + `7`  | Descomentar código seleccionado                          |
 | `Ctrl` + `Shift` + `J`  | Reload Window (para recononocer el package root de Java) |
+| `Ctrl` + `R`            | Quick fix (crea métodos dinámicamente si no existen      |
 | `F11`                   | Comenzar a debuggear                                     |
 | `F12`                   | Ídem. F11                                                |
 | `F6`                    | Step over                                                |
