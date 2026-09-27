@@ -314,6 +314,14 @@
   "args": {
     "cwd": "${workspaceFolder}/../.."
   }
+},
+	{
+  "key": "ctrl+q",
+  "command": "editor.action.codeAction",
+  "args": {
+    "kind": "quickfix"
+  },
+  "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
 }
 	
 ]
