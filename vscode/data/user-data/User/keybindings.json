@@ -322,6 +322,10 @@
     "kind": "quickfix"
   },
   "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+},
+{
+    "key": "ctrl+shift+delete",
+    "command": "workbench.action.removeRootFolder"
 }
 	
 ]
