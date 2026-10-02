@@ -49,6 +49,7 @@
 
 ## Project explorer
 
-| Atajo                 | Acción                                  |
-|-----------------------|-----------------------------------------|
-| `Alt` + `Shift` + `F` | Agregar carpeta al workspace            |
+| Atajo                    | Acción                                  |
+|--------------------------|-----------------------------------------|
+| `Alt` + `Shift` + `F`    | Agregar carpeta al workspace            |
+| `Ctrl` + `Shift` + `Del` | Remover carpeta del workspace           |
