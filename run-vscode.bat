@@ -12,12 +12,46 @@ if "%BASE%"=="" set "BASE=%SCRIPT_DRIVE%"
 :: Quitar barras diagonales sobrantes por si el usuario pasó "D:\"
 set "BASE=%BASE:\=%"
 
-set "JAVA_HOME=%BASE%\vscode\jdk25"
+set "JAVA_HOME=%BASE%\vscode\jdk17"
 set "PATH=%JAVA_HOME%\bin;%BASE%\vscode\MinGW\bin;%PATH%"
 
 set "WS_DIR=%BASE%\vscode\Workspace"
 
-:: Contar cuántos archivos .code-workspace existen en la carpeta
+:: Ruta al archivo de almacenamiento local de VS Code Portable
+set "VSCODE_STORAGE=%BASE%\vscode\vscode\data\user-data\User\globalStorage\storage.json"
+set "LAST_WS="
+
+:: ---------------------------------------------------------
+:: 1. Intentar obtener el último .code-workspace desde la data portable
+:: ---------------------------------------------------------
+if exist "%VSCODE_STORAGE%" (
+    for /f "usebackq delims=" %%A in (`powershell -NoProfile -Command ^
+        "$file = '%VSCODE_STORAGE:\=\\%'; " ^
+        "$content = Get-Content -Raw -Path '%VSCODE_STORAGE%' -ErrorAction SilentlyContinue; " ^
+        "if ($content) { " ^
+        "  $matches = [regex]::Matches($content, 'file:///(.*?\.(?:code-workspace))'); " ^
+        "  if ($matches.Count -gt 0) { " ^
+        "    $lastMatch = $matches[$matches.Count - 1].Groups[1].Value; " ^
+        "    [System.Uri]::UnescapeDataString($lastMatch); " ^
+        "  } " ^
+        "}"`) do (
+        set "LAST_WS=%%A"
+    )
+)
+
+:: Normalizar la ruta devuelta (convertir / a \) y verificar si el archivo existe
+if defined LAST_WS (
+    set "LAST_WS=!LAST_WS:/=\!"
+    if exist "!LAST_WS!" (
+        echo Abriendo ultimo workspace usado: "!LAST_WS!"
+        set "SELECTED_WS=!LAST_WS!"
+        goto :LAUNCH
+    )
+)
+
+:: ---------------------------------------------------------
+:: 2. Si es la primera vez o no hay historial, mostrar menú
+:: ---------------------------------------------------------
 set "COUNT=0"
 for %%F in ("%WS_DIR%\*.code-workspace") do (
     set /a COUNT+=1
@@ -43,7 +77,7 @@ echo ============================================
 echo  Selecciona un Workspace para abrir:
 echo ============================================
 for /l %%I in (1,1,%COUNT%) do (
-    echo   [%%I] !NAME_%%I!
+    echo    [%%I] !NAME_%%I!
 )
 echo ============================================
 
