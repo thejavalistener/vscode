@@ -2,16 +2,18 @@
 
 ## Editor
 
-| Atajo                        | Acción                          |
-|------------------------------|---------------------------------|
-| `Ctrl` + `+`                 | Aumentar zoom del editor        |
-| `Ctrl` + `-`                 | Disminuir zoom del editor       |
-| `Ctrl` + `0`                 | Restablecer zoom                |
-| `Ctrl` + `D`                 | Borrar línea actual             |
-| `Ctrl` + `Shift` + `Y`       | Copia y pega la línea actual    |
-| `Alt` + `Ctrl` + `Up`/`Down` | Cursores múltiples              |
-| `Alt` + `1`                  | Abrir el explorador de archivos |
-| `Alt` + `2`                  | Abrir terminal externa          |
+| Atajo                        | Acción                                       |
+|------------------------------|----------------------------------------------|
+| `Ctrl` + `+`                 | Aumentar zoom del editor                     |
+| `Ctrl` + `-`                 | Disminuir zoom del editor                    |
+| `Ctrl` + `0`                 | Restablecer zoom                             |
+| `Ctrl` + `D`                 | Borrar línea actual                          |
+| `Ctrl` + `Shift` + `Y`       | Copia y pega la línea actual                 |
+| `Alt` + `Ctrl` + `Up`/`Down` | Cursores múltiples                           |
+| `Alt` + `1`                  | Abrir el explorador de archivos              |
+| `Alt` + `2`                  | Abrir terminal externa                       |
+| `Alt` + `Ctrl` + `Right`     | Duplica hacia la derecha el el editor activo |
+| `Alt` + `Ctrl` + `Left`      | Cierra el editor duplicado                   |
 
 ## Paneles
 
