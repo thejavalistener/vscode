@@ -326,6 +326,16 @@
 {
     "key": "ctrl+shift+delete",
     "command": "workbench.action.removeRootFolder"
-}
+},
+{
+    "key": "ctrl+alt+right",
+    "command": "workbench.action.splitEditor",
+    "when": "editorTextFocus"
+},
+  {
+    "key": "ctrl+alt+left",
+    "command": "workbench.action.joinTwoGroups",
+    "when": "editorTextFocus"
+  }
 	
 ]
