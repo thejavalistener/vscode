@@ -40,6 +40,8 @@
 "workbench.editorAssociations": {
   "*.dat": "hexEditor.hexedit"
 },
+"workbench.preferredDarkColorTheme": "Visual Studio Dark",
+"workbench.preferredLightColorTheme": "Visual Studio Light",
 "editor.bracketPairColorization.enabled": false,
 "editor.renderControlCharacters": false,
 "git.enableSmartCommit": true,
