@@ -27,7 +27,7 @@
 | `Ctrl` + `Alt` + `shift` +`X`   | Abrir una nueva terminal posicionada en la carpeta del archivo                 |
 | `Ctrl` + `shift` +`X`           | Abrir una nueva terminal posicionada en la carpeta vscode                      |
 | `Ctrl` + `R`                    | Cambiar de Workspace                                                           |
-| `Alt` + `Shift` + `R`           | Alternar entre tema claro y oscuro (los temas se configuran en `settings.json` |
+| `Alt` + `Shift` + `D`           | Alternar entre tema claro y oscuro (los temas se configuran en `settings.json` |
 
 
 ## Código, compilar y debuggear
