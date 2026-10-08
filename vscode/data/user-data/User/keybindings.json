@@ -336,6 +336,11 @@
     "key": "ctrl+alt+left",
     "command": "workbench.action.joinTwoGroups",
     "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+shift+d",
+    "command": "workbench.action.toggleLightDarkThemes"
   }
+
 	
 ]
