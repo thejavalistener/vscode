@@ -26,9 +26,15 @@
 | `Ctrl` + `Alt` + `X`            | Abrir una nueva terminal posicionada en la carpeta del proyecto                |
 | `Ctrl` + `Alt` + `shift` +`X`   | Abrir una nueva terminal posicionada en la carpeta del archivo                 |
 | `Ctrl` + `shift` +`X`           | Abrir una nueva terminal posicionada en la carpeta vscode                      |
-| `Ctrl` + `R`                    | Cambiar de Workspace                                                           |
 | `Alt` + `Shift` + `D`           | Alternar entre tema claro y oscuro (los temas se configuran en `settings.json` |
 
+## Workspace y proyectos
+
+| Atajo                           | Acción                                 |
+|---------------------------------|----------------------------------------|
+| `Alt` + `Shift` + `F`           | Agregar un proyecto al workspace       |
+| `Ctrl` + `Shift` + `DEL`        | Remover un proyecto del workspace      |
+| `Ctrl` + `R`                    | Cambiar de Workspace                   |
 
 ## Código, compilar y debuggear
 
@@ -41,7 +47,7 @@
 | `Ctrl` + `7`            | Comentar código seleccionado                             |
 | `Ctrl` + `Shift` + `7`  | Descomentar código seleccionado                          |
 | `Ctrl` + `Shift` + `J`  | Reload Window (para recononocer el package root de Java) |
-| `Ctrl` + `R`            | Quick fix (crea métodos dinámicamente si no existen      |
+| `Ctrl` + `Shift` + `Q`  | Quick fix (crea métodos dinámicamente si no existen      |
 | `F11`                   | Comenzar a debuggear                                     |
 | `F12`                   | Ídem. F11                                                |
 | `F6`                    | Step over                                                |
